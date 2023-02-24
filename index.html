@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!-- 
+    Texture Pack Download Website 
+
+    Website meant to allow users to download the purpledragon 
+    texture pack in just a click!
+
+    Owner: Endther#0001
+    Developer: ghostyy#2528
+    Pack Developers:
+        - Lead Developer: lime#0938
+        - Made up name#3389
+
+    Website Developed by Ghostyy <3
+-->
+<html>
+
+<head>
+    <title>Purple Dragon - Endther</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="images/pack.png">
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div>
+        <div class="navbar white padding" style="letter-spacing:4px;">
+            <div class="padding logo">
+                <!-- Logo Image -->
+                <img src="images/pack.png" width="68" height="68">
+            </div>
+
+            <div class="right padding">
+                
+                <a href="#" class="item button">Home</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="bgimg opac_style">
+        <div class="middle_text">
+            <!-- Title -->
+            <h1 class="title" id="text">PurpleDragon x16</h1>
+            <hr class="line">
+            <p class="subtitle">
+                <!-- Download Button -->
+                <a href="§5Purple§8dragon x16 pvp.zip" class="download" download="§5Purple§8dragon x16 pvp.zip">
+                    Download
+                  </a>
+            </p>
+        </div>
+    </div>
+
+    
+</body>
+<script>
+    // Code for downloading the texture pack
+    function download(file, text) {
+        var element = document.createElement('a');
+        element.setAttribute('href',
+            'data:text/plain;charset=utf-8, '
+            + encodeURIComponent(text));
+        element.setAttribute('download', file);
+        document.body.appendChild(element);
+        element.click();
+        document.body.removeChild(element);
+    }
+
+    document.getElementById("btn")
+        .addEventListener("click", function () {
+            var text = document.getElementById("text").value;
+            var filename = "§5Purple§8dragon x16 pvp.zip";
+
+            download(filename, text);
+        }, false);
+</script>
+
+</html>
