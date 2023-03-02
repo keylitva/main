@@ -18,6 +18,15 @@ body, html {
     color:#fff!important;
     box-shadow: inset 0 0 0 1000px rgba(81, 22, 92, 0.312);
 }
+.bgimg2 {
+    background-image: url('images/background.jpg');
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+    position:relative;
+    color:#fff!important;
+    box-shadow: inset 0 0 0 1000px rgba(39,17,42, 0.85);
+}
 
 .opac_style {
     animation:opac 0.8s
